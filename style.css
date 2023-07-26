@@ -1,0 +1,230 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+    /* Headings  --> 400 600 */
+    --poppins-font: 'Poppins', sans-serif;
+
+    /* Body --> 400  */
+    --open-sans-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%; 
+}
+
+body {
+    background: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+main {
+    padding: 0 8rem;
+}
+
+.logo {
+    padding-top: 4rem;
+    padding-left: 8rem;
+}
+
+.logo img {
+    width: 23rem;
+}
+
+.huddle-landing-page-section {
+    display: flex;
+    margin-top: 9rem;
+}
+
+.huddle-landing-page-section__illustration {
+    width: 54%;
+}
+
+.huddle-landing-page-section__illustration img {
+    width: 100%;
+}
+
+.huddle-landing-page-section__content {
+    width: 42%;
+    padding-left: 5rem;
+    padding-top: 4rem;
+}
+
+.huddle-landing-page-section__content h1 {
+    color: white;
+    font-family: var(--poppins-font);
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.huddle-landing-page-section__content p {
+    color: white;
+    font-size: 1.7rem;
+    font-family: var(--open-sans-font);
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.huddle-landing-page-section__content button {
+    background-color: white;
+    border: none;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 40px;
+    font-size: 1.7rem;
+    color: var(--violet);
+    box-shadow: 12px 9px 24px -9px rgba(0,0,0,0.74);
+}
+
+.huddle-landing-page-section__content button:hover {
+    color: white;
+    background-color: var(--soft-magenta);
+}
+
+.huddle-landing-page-section__icons-social-media {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 4rem;
+        margin-bottom: 4rem;
+}
+
+.huddle-landing-page-section__icons-social-media figure {
+    border: 2px solid white;
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+
+.huddle-landing-page-section__icons-social-media figure i {
+    font-size: 2rem;
+    color: white;
+}
+
+.huddle-landing-page-section__icons-social-media figure:hover {
+
+    border-color: var(--soft-magenta);
+}
+
+.huddle-landing-page-section__icons-social-media figure i:hover {
+    color: var(--soft-magenta);
+}
+
+@media (max-width: 1300px) {
+    .huddle-landing-page-section__content {
+        padding-top: 0px;
+        width: 50%;
+    }
+
+    .huddle-landing-page-section__content h1 {
+        font-size: 3rem;
+    }
+
+    .huddle-landing-page-section__icons-social-media {
+        margin-top: 4rem;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .huddle-landing-page-section {
+        display: block;
+    }
+
+    .huddle-landing-page-section__illustration {
+        width: 100%;
+        text-align: center;
+    }
+
+    .huddle-landing-page-section__content {
+        width: 100%;
+        padding: 6rem;
+        text-align: center;
+    }
+
+    .huddle-landing-page-section__content h1 {
+        font-size: 4rem;
+    }
+
+    .huddle-landing-page-section__icons-social-media {
+        justify-content: center;
+    }
+
+    .huddle-landing-page-section__illustration img {
+        width: 84%;
+    }
+}
+
+@media (max-width: 768px) {
+    .huddle-landing-page-section__content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .huddle-landing-page-section__illustration img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    main {
+        padding: 0px 3.5rem;
+    }
+
+    .logo {
+        padding-top: 3rem;
+        padding-left: 3.5rem;
+    }
+
+    .logo img {
+        width: 13rem;
+    }
+
+    .huddle-landing-page-section {
+        margin-top: 6rem;
+    }
+
+    .huddle-landing-page-section__content {
+        padding: 4rem 0;
+    }
+
+    .huddle-landing-page-section__content h1 {
+        font-size: 2.5rem;
+    }
+
+    .huddle-landing-page-section__content p {
+        font-size: 1.6rem;
+    }
+    
+    .huddle-landing-page-section__content button {
+        font-size: 1.5rem;
+    }
+
+    .huddle-landing-page-section__icons-social-media figure  {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .huddle-landing-page-section__icons-social-media figure i {
+        font-size: 1.3rem;
+    }
+}
