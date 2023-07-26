@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/DanielaMichelle/huddle-landing-page-with-a-single-introductory-section 
+- Live Site URL: https://danielamichelle.github.io/huddle-landing-page-with-a-single-introductory-section/
 
 ### Built with
 
